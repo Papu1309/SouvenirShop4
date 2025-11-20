@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c03d370f584f41d09e7368c03f736dc7" Name="Diagram1">
+        <EntityTypeShape EntityType="SouvenirShopModel.Categories" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.Customers" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.OrderItems" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.Orders" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.Souvenirs" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SouvenirShopModel.Users" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="SouvenirShopModel.FK_Souvenirs_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="SouvenirShopModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="SouvenirShopModel.FK_OrderItems_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="SouvenirShopModel.FK_OrderItems_Souvenirs" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
