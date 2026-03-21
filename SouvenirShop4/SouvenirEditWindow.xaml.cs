@@ -41,10 +41,11 @@ namespace SouvenirShop4
             txtDescription.Text = souvenir.Description;
             txtPrice.Text = souvenir.Price.ToString("0.00");
             txtStockQuantity.Text = souvenir.StockQuantity.ToString();
+            cmbCategories.Text = souvenir.Categories.ToString();
 
             if (souvenir.CategoryId.HasValue)
             {
-                var categories = Connection.entities.Categories.ToList();
+                var categories = Connect.Connection.entities.Categories.ToList();
                 var selectedCategory = categories.FirstOrDefault(c => c.CategoryId == souvenir.CategoryId.Value);
                 if (selectedCategory != null)
                 {
@@ -57,7 +58,7 @@ namespace SouvenirShop4
         {
             try
             {
-                var categories = Connection.entities.Categories.ToList();
+                var categories = Connect.Connection.entities.Categories.ToList();
                 cmbCategories.ItemsSource = categories;
 
                 if (categories.Count > 0 && !isEditMode)
@@ -129,10 +130,10 @@ namespace SouvenirShop4
                         StockQuantity = quantity,
                         CategoryId = selectedCategory.CategoryId
                     };
-                    Connection.entities.Souvenirs.Add(newSouvenir);
+                    Connect.Connection.entities.Souvenirs.Add(newSouvenir);
                 }
 
-                Connection.entities.SaveChanges();
+                Connect.Connection.entities.SaveChanges();
                 this.DialogResult = true;
                 this.Close();
             }

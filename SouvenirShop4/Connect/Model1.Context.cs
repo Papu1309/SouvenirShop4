@@ -13,10 +13,10 @@ namespace SouvenirShop4.Connect
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SouvenirShopEntities1 : DbContext
+    public partial class SouvenirShopEntities2 : DbContext
     {
-        public SouvenirShopEntities1()
-            : base("name=SouvenirShopEntities1")
+        public SouvenirShopEntities2()
+            : base("name=SouvenirShopEntities2")
         {
         }
     

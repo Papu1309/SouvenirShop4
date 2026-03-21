@@ -8,6 +8,6 @@ namespace SouvenirShop4.Connect
 {
     public class Connection
     {
-        public static SouvenirShopEntities1 entities = new SouvenirShopEntities1();
+        public static SouvenirShopEntities2 entities = new SouvenirShopEntities2();
     }
 }

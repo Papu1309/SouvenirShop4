@@ -62,7 +62,7 @@
                             <DataGridTextColumn Header="Описание" Binding="{Binding Description}" Width="250"/>
                             <DataGridTextColumn Header="Цена" Binding="{Binding Price, StringFormat={}{0:C}}" Width="100"/>
                             <DataGridTextColumn Header="В наличии" Binding="{Binding StockQuantity}" Width="80"/>
-                            <DataGridTextColumn Header="Категория" Binding="{Binding Category.CategoryName}" Width="120"/>
+                            <DataGridTextColumn Header="Категория" Binding="{Binding Categories.CategoryName}" Width="120"/>
                             <DataGridTemplateColumn Width="100">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
