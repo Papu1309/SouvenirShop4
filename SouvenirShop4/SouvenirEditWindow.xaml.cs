@@ -51,7 +51,7 @@ namespace SouvenirShop4
                 {
                     cmbCategories.SelectedItem = selectedCategory;
                 }
-            }
+            }  
         }
 
         private void LoadCategories()
