@@ -1,5 +1,6 @@
 ﻿using SouvenirShop4.Connect;
 using System;
+using SouvenirShop;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
